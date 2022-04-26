@@ -48,4 +48,8 @@ class CHRTController extends Controller
             }else return 'Нет доступа';
         }else return 'Нет доступа';
     }
+
+    public function Confidential(Request $req) {
+        return view('confident');
+    }
 }

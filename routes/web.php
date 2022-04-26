@@ -20,6 +20,10 @@ Route::get('sum', [\App\Http\Controllers\CHRTController::class, 'SumNum']);
 Route::get('getSum', [\App\Http\Controllers\CHRTController::class, 'GetSumNum']);
 Route::get('hack', [\App\Http\Controllers\CHRTController::class, 'Hack']);
 
+Route::get('confident', [\App\Http\Controllers\CHRTController::class, 'Confidential']);
+
+
+
 Route::get('/', function () {
     return view('welcome');
 });
