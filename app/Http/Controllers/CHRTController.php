@@ -49,7 +49,24 @@ class CHRTController extends Controller
         }else return 'Нет доступа';
     }
 
-    public function Confidential(Request $req) {
-        return view('confident');
+    public function Confidential() {
+        $organization = "Король и Шут";
+        return view('confident', compact('organization'));
+    }
+    public function FavoriteLine() {
+        $line = "Публичная власть усиливается по мере того, как обостряются классовые противоречия внутри государства, и по мере того, как соприкасающиеся между собой государства становятся больше и населеннее. «Происхождение семьи, частной собственности и государства»";
+        return view('myFavoriteLineFromTheBook', compact('line'));
+    }
+    public function liArray() {
+        $groups = ["Король и Шут", 'Ария', 'Кино'];
+        return view('li', compact('groups'));
+    }
+    public function divArray() {
+        $groups = ["Король и Шут", 'Ария', 'Кино', 'ДДТ', 'Nirvana'];
+        return view('div', compact('groups'));
+    }
+    public function spanArray() {
+        $nums = [1,2,3,4,5,6,7,8];
+        return view('span', compact('nums'));
     }
 }

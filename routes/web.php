@@ -21,6 +21,10 @@ Route::get('getSum', [\App\Http\Controllers\CHRTController::class, 'GetSumNum'])
 Route::get('hack', [\App\Http\Controllers\CHRTController::class, 'Hack']);
 
 Route::get('confident', [\App\Http\Controllers\CHRTController::class, 'Confidential']);
+Route::get('favoriteLine', [\App\Http\Controllers\CHRTController::class, 'FavoriteLine']);
+Route::get('li', [\App\Http\Controllers\CHRTController::class, 'liArray']);
+Route::get('div', [\App\Http\Controllers\CHRTController::class, 'divArray']);
+Route::get('span', [\App\Http\Controllers\CHRTController::class, 'spanArray']);
 
 
 
